@@ -1,0 +1,1 @@
+import{r as s,o as a,f as e,w as r,i as o,j as t,k as c,aI as l}from"./index-CPBjD6nT.js";const n={__name:"webview",setup(n){const u=s("");return a((s=>{console.log("e",s.src),u.value=s.src})),(s,a)=>{const n=l,f=o;return t(),e(f,{class:""},{default:r((()=>[c(n,{src:u.value},null,8,["src"])])),_:1})}}};export{n as default};
