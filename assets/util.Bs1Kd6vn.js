@@ -1,1 +1,0 @@
-function t(t="0",e="0"){t=String(t).split("."),e=String(e).split(".");const n=Math.min(t.length,e.length);let r=0;for(let l=0;l<n;l++){const n=Number(t[l]),i=Number(e[l]);if(n>i){r=1;break}if(n<i){r=-1;break}}if(0===r&&t.length!==e.length){const l=t.length>e.length,i=l?t:e;for(let t=n;t<i.length;t++){if(Number(i[t])>0){r=l?1:-1;break}}}return r}export{t as c};

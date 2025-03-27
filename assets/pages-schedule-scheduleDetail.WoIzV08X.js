@@ -1,1 +1,0 @@
-import{aG as s,f as e,j as a,i as t}from"./index-CPBjD6nT.js";const o={__name:"scheduleDetail",setup:o=>(s((s=>{"取消"==s.text&&console.log("取消")})),(s,o)=>{const l=t;return a(),e(l,{class:""})})};export{o as default};

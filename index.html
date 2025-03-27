@@ -1,27 +1,128 @@
 <!DOCTYPE html>
-<html lang="zh_cn">
-	<head>
-		<link rel="stylesheet" href="/assets/uni.a573a248.css">
+<html lang="zh-CN">
 
-		<meta charset="UTF-8" />
-		<link rel="icon" href="/assets/favicon-BA_TeEy-.ico">
-		<script>
-			var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-			document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-		</script>
-		<title>Snowy-Mobile</title>
-		<!--preload-links-->
-		<!--app-context-->
-		<style>
-			html, body {
-				margin: 0;
-				padding: 0;
-			}
-		</style>
-		<script type="module" crossorigin src="/assets/index-CPBjD6nT.js"></script>
-		<link rel="stylesheet" crossorigin href="/assets/index-RqJsy_Q1.css">
-	</head>
-	<body>
-		<div id="app"><!--app-html--></div>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>因子表格</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>一级因子</th>
+        <th colspan="2">二级因子</th>
+        <th>说明</th>
+        <th>取值</th>
+      </tr>
+      <tr>
+        <th>因子</th>
+        <th>权重</th>
+        <th>因子</th>
+        <th>权重</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">地形地貌</td>
+        <td rowspan="4">0.05</td>
+        <td rowspan="4">地面形态</td>
+        <td rowspan="4">6</td>
+        <td>地形破裂，分割严重，非常严重</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>地形分割，较严重，复杂</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>地形变化较大，较完整</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>地形简单完整</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="4"></td>
+        <td rowspan="4"></td>
+        <td rowspan="4">坡度</td>
+        <td rowspan="4">4</td>
+        <td>i≥0.5</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>0.5 > i≥0.25</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>0.25 > i≥0.1</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>i≤0.1</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td rowspan="4">水文</td>
+        <td rowspan="4">0.15</td>
+        <td rowspan="4">洪水淹没可能性</td>
+        <td rowspan="4">10</td>
+        <td>> 0.1m</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>0.5m~1m</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>< 0.5m</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>无洪水淹没</td>
+        <td>8</td>
+      </tr>
+
+	  <tr>
+        <td rowspan="4">工程地质</td>
+        <td rowspan="4">0.2</td>
+        <td rowspan="4">洪水淹没可能性</td>
+        <td rowspan="4">10</td>
+
+        <td>> 0.1m</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>0.5m~1m</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>< 0.5m</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>无洪水淹没</td>
+        <td>8</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
 </html>
